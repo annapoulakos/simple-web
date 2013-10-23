@@ -1,1 +1,1 @@
-angular.module('simpleWebApplication', []);
+angular.module('simpleWebApplication', ['ngResource']);
