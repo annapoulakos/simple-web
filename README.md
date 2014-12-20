@@ -23,3 +23,13 @@ If you'd like to contribute to this repository, please don't hesitate to message
     > This system is a very simple templating engine. There are no fancy tags or functionality: It is simply a find/replace type of templating engine.
 
 ## In Progress
+
+
+
+1. REST API endpoint system.
+2. Better documentation/comments.
+3. Clean up SimpleTest.
+
+## Special Thanks
+
+I'd like to thank Jamie Matthews for [Idiorm](https://github.com/j4mie/idiorm) and [Paris](https://github.com/j4mie/paris) which I use in this framework to handle database abstraction. It serves 90% of use cases that I have come across in the wild. And realistically, anything beyond what this system can handle should probably use a DBA anyways. I have modified this implementation of Idiorm/Paris to be in its own namespace.
