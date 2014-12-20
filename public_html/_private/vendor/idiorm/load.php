@@ -12,14 +12,5 @@ if (!defined('__IDIORM_LOADED__')) {
     \Idiorm\ORM::configure('username', 'YOUR_DB_USERNAME');
     \Idiorm\ORM::configure('password', 'YOUR_DB_PASSWORD');
 
-    function idiorm_autoload ($class) {
-        $class = strtolower($class);
-
-        if (file_exists(dirname(__FILE__). "/models/{$class}.php")) {
-            include dirname(__FILE__). "/models/{$class}.php";
-        }
-    }
-    spl_autoload_register('idiorm_autoload', true, true);
-
     define('__IDIORM_LOADED__', true);
 }
